@@ -1,0 +1,125 @@
+
+:root{ 
+    --cor-primaria: #66141b;  /* variavel para organizar as cores utilizadas na pagina */
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #fcb4b4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: Exo;
+}
+
+.cabecalho{
+    padding: 2% 0 0 8%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho_menu_link{
+    width: 50%;
+    font-size: large;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+
+p{
+    text-indent:1em;  /* identa o texto corretamente */
+    text-align:justify;
+    font-size: large;
+}
+
+strong{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao{
+    display: flex;
+    padding: 5% 10%;
+    align-content: center;
+    justify-content: center;
+}
+
+.coluna-1{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* setting the gap  between each line/text content */
+    align-items: center;
+    padding-bottom: 0;
+    width: 50%;
+}
+
+.links{
+    gap: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_2, .btn_1{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 8px;
+    background-color: var(--cor-secundaria); 
+    color:var(--cor-primaria);
+    text-decoration:none;
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn_1:hover, .btn_2:hover{
+    box-shadow: 3px 3px 2px 1px rgba(255, 255, 255, 0.562);
+}
+
+.h_about{
+    margin-top: 10%; /* centralizando o texto da pag about me */
+}
+
+.minha_foto{
+    width: 50%;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho_menu{
+        justify-content: center;
+    }
+  .apresentacao
+   {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 8%;
+   }
+
+   .coluna-1{
+    width: auto;
+   }
+}
+
+.rodape{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    font-size: large;
+    color: var(--cor-primaria);
+}
